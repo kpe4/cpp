@@ -8,34 +8,34 @@ int main() {
     string race;
     string name;
 
-    cout << "Введите пол, m или f: ";
+    cout << "Enter your gender, m or f: ";
     cin >> gender;
 
     if (gender != "m" && gender != "f") {
-        cout << "Неверный пол" << endl;
+        cout << "Invalid gender" << endl;
         return 0;
     }
 
-    cout << "Введите расу (human, elf, orc): ";
+    cout << "Eter your race (human, elf, orc): ";
     cin >> race;
 
     if (race != "human" && race != "elf" && race != "orc") {
-        cout << "Неверная раса" << endl;
+        cout << "Invalid race" << endl;
         return 0;
     }
 
-    cout << "Введите ник персонажа: ";
+    cout << "Enter character name: ";
     cin >> name;
 
     if (name.length() < 2) {
-        cout << "У тебя слишком маленький(ник)" << endl;
+        cout << "Name is too short" << endl;
         return 0;
     }
 
-    cout << "\nПерсонаж создан!" << endl;
-    cout << "Пол: " << gender << endl;
-    cout << "Раса: " << race << endl;
-    cout << "Имя: " << name << endl;
+    cout << "\nCharacter created!" << endl;
+    cout << "Gender: " << gender << endl;
+    cout << "Race: " << race << endl;
+    cout << "Name: " << name << endl;
 
     return 0;
 }
